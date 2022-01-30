@@ -1,7 +1,6 @@
 import {
   Links,
   Link,
-  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
@@ -11,16 +10,7 @@ import {
 import type { MetaFunction } from "remix";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
-};
-
-export const links: LinksFunction = () => {
-  return [
-    {
-      rel: "stylesheet",
-      href: "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/monokai.min.css",
-    },
-  ];
+  return { title: "Code Comments" };
 };
 
 export default function App() {

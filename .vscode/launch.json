@@ -8,11 +8,10 @@
       "skipFiles": ["<node_internals>/**"],
       "type": "pwa-node"
     },
-
     {
       "name": "Run npm run dev",
+      "command": "npm run dev",
       "notes": "for use with remix servers",
-      "processId": "npm run dev",
       "request": "launch",
       "skipFiles": ["<node_internals>/**"],
       "type": "node-terminal",
