@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "Attach by Process ID",
+      "notes": "for use with any proxied server, ex. express",
+      "processId": "${command:PickProcess}",
+      "request": "attach",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "pwa-node"
+    },
+
+    {
+      "name": "Run npm run dev",
+      "notes": "for use with remix servers",
+      "processId": "npm run dev",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
